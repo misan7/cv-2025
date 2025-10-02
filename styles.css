@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #f8f8f8;
+  padding: 40px 30px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ddd;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 11px;
+  color: #333;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  background: #4a5bbb;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.section-title {
+  color: #4a5bbb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.sidebar .section-title:first-of-type {
+  margin-top: 0;
+}
+
+.about-text {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #4a5bbb;
+  font-weight: 600;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  font-size: 11px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: #4a5bbb;
+}
+
+.link-item {
+  font-size: 11px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.link-label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.link-url {
+  color: #666;
+  word-break: break-all;
+}
+
+.language-item {
+  margin-bottom: 12px;
+}
+
+.language-name {
+  font-size: 11px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.main-content {
+  padding: 40px 50px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #4a5bbb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.main-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.job-entry {
+  margin-bottom: 30px;
+}
+
+.job-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.job-company {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.job-description {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.job-description ul {
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.job-description li {
+  margin-bottom: 6px;
+}
+
+.education-entry {
+  margin-bottom: 20px;
+}
+
+.education-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 3px;
+}
+
+.education-institution {
+  font-size: 11px;
+  color: #666;
+}
+
+@media print {
+  body {
+    padding: 0;
+    background: white;
+  }
+  .container {
+    box-shadow: none;
+  }
+}
