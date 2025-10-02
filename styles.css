@@ -43,17 +43,19 @@ body {
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-  font-size: 11px;
-  color: #333;
+  margin-bottom: 10px;
 }
 
 .contact-icon {
-  width: 20px;
-  height: 20px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
   background: #4a5bbb;
   border-radius: 50%;
   margin-right: 10px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   flex-shrink: 0;
 }
 
@@ -136,11 +138,22 @@ body {
 }
 
 .main-content {
-  padding: 40px 50px;
+  /* Si necesita padding solo en la parte superior/inferior, defínalo así: */
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 0; /* Asegura que no haya espacio lateral a la izquierda */
+  padding-right: 0; /* Asegura que no haya espacio lateral a la derecha */
+  margin-top: 0;
 }
 
-.header {
-  margin-bottom: 40px;
+.main-content .header {
+  background-color: #f8f8f8; /* Color de fondo para que ocupe todo el ancho */
+  color: black; /* Color del texto para asegurar la visibilidad */
+
+  /* CLAVE: Asegura que el fondo ocupe todo el ancho del main-content */
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px; /* Ajusta este valor para el espacio vertical y horizontal del texto */
 }
 
 .name {
@@ -157,6 +170,10 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.main-section {
+  padding: 20px;
 }
 
 .main-section-title {
