@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sergio Morales</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+        }
+        
+        .sidebar {
+            background: #f8f8f8;
+            padding: 40px 30px;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 0 auto 30px;
+            display: block;
+        }
+        
+        .contact-info {
+            margin-bottom: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 11px;
+            color: #333;
+        }
+        
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            background: #4A5BBB;
+            border-radius: 50%;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .section-title {
+            color: #4A5BBB;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        
+        .sidebar .section-title:first-of-type {
+            margin-top: 0;
+        }
+        
+        .about-text {
+            font-size: 11px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            color: #4A5BBB;
+            font-weight: 600;
+        }
+        
+        .skill-item {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            font-size: 11px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-fill {
+            height: 100%;
+            background: #4A5BBB;
+        }
+        
+        .link-item {
+            font-size: 11px;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .link-label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        .link-url {
+            color: #666;
+            word-break: break-all;
+        }
+        
+        .language-item {
+            margin-bottom: 12px;
+        }
+        
+        .language-name {
+            font-size: 11px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .main-content {
+            padding: 40px 50px;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        .name {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 11px;
+            color: #4A5BBB;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        
+        .main-section-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #000;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .job-entry {
+            margin-bottom: 30px;
+        }
+        
+        .job-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 5px;
+        }
+        
+        .job-company {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .job-description {
+            font-size: 11px;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .job-description ul {
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+        
+        .job-description li {
+            margin-bottom: 6px;
+        }
+        
+        .education-entry {
+            margin-bottom: 20px;
+        }
+        
+        .education-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 3px;
+        }
+        
+        .education-institution {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23ddd'/%3E%3C/svg%3E" alt="Profile" class="profile-img">
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"></div>
+                    <span>646110986</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"></div>
+                    <span>sergio.mora@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"></div>
+                    <span>Montornés, Tarragona, España</span>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="about-text">
+                Soy <span class="highlight">Sergio Morales</span>, <span class="highlight">Frontend Developer</span> con pasión por crear experiencias digitales impactantes. Node.js en entornos ágiles.
+            </p>
+            <p class="about-text">
+                Fundador entre <span class="highlight">Fullstack Developer</span>, creando soluciones innovadoras y escalables.
+            </p>
+            <p class="about-text">
+                En los últimos años me he especializado en la <span class="highlight">creación de contenido digital</span> educativo. Comunidades con más de <span class="highlight">20.000 seguidores</span> y herramientas en análisis, gestión y automatización.
+            </p>
+            <p class="about-text">
+                Quiero unir mi experiencia técnica con mi capacidad de comunicación para el mundo digital para aportar <span class="highlight">más valor desde la tecnología</span>.
+            </p>
+            
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skill-item">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">React.js</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">AI</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">GitHub</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%"></div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Enlaces</h2>
+            <div class="link-item">
+                <div class="link-label">LinkedIn:</div>
+                <div class="link-url">www.linkedin.com/sergio-moral es-issne</div>
+            </div>
+            <div class="link-item">
+                <div class="link-label">Portfolio:</div>
+                <div class="link-url">github.com/user?</div>
+            </div>
+            
+            <h2 class="section-title">Idiomas</h2>
+            <div class="language-item">
+                <div class="language-name">Spanish</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="language-item">
+                <div class="language-name">English</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="language-item">
+                <div class="language-name">Catalan</div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="header">
+                <h1 class="name">Sergio Morales</h1>
+                <p class="subtitle">Frontend Developer | React | I/I<br>Creatividad • Visión Estratégica</p>
+            </div>
+            
+            <h2 class="main-section-title">Experiencia Laboral</h2>
+            
+            <div class="job-entry">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-company">Profesional independiente / ago. 2022 - Actualid</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Desarrollo de aplicaciones web con React, Redux y Node</li>
+                        <li>Exploración de soluciones con IA aplicada al frontend</li>
+                        <li>Colaboraciones puntuales en proyectos digitales.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-title">Content Creator (Proyecto paralelo)</div>
+                <div class="job-company">YouTube Channel / sep. 2022 - Actualidad</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Creación de proyectos digitales con audiencias de +20.</li>
+                        <li>Diseño de estrategias de crecimiento, contenido viral y sector.</li>
+                        <li>Negociación con patrocinadores, monetización y gestión personal.</li>
+                        <li>Competencias transferibles: autogestión, análisis de mi efectiva, creatividad aplicada.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-company">Business Insights Spain / Barcelona / feb. 2019 -</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Desarrollo de aplicaciones web con React, Redux, Node</li>
+                        <li>Trabajo en equipo internacional ágil (SCRUM) en proyect AXA.</li>
+                        <li>Creación de App, optimización de interfaces y usabilida internas.</li>
+                        <li>Implementación de nuevas funcionalidades estratégicas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-title">Co-founder & Developer</div>
+                <div class="job-company">Heya_ES / Barcelona y alrededores / jul. 2018 - s</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Creación de un sistema virtual con IA para organizar usuarios.</li>
+                        <li>Liderazgo en el desarrollo del chatbot y diseño de produ</li>
+                        <li>Aplicación de técnicas de procesamiento de lenguaje n, automatización.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-title">Full-stack Developer</div>
+                <div class="job-company">BotSpecialist / Granollers y alrededores / mar. 2</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Desarrollo de aplicaciones web y chatbots con React, G Shopify, DialogFlow.</li>
+                        <li>Soluciones a medida para e-commerce y servicios digita</li>
+                        <li>Ejemplos: alambots.com, fatsarentrentslink.com, centros barcelonarmedics.link.com.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-title">Robotics Process Automation Developer</div>
+                <div class="job-company">Tanea Tecnologies / Barcelona y alrededores / en 2018</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Automatización de procesos internos repetitivos (entra formularios, scraping, backups).</li>
+                        <li>Tecnologías: JavaScript, HTML, CSS, WinAutomation.</li>
+                        <li>Reducción de tiempos operativos y minimización de err repetitivos.</li>
+                        <li>Creación de guías de buenas prácticas en la robotizació Technology.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job-entry">
+                <div class="job-title">Full-stack Developer</div>
+                <div class="job-company">ISDI Coders / Barcelona y alrededores / abr. 201</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Desarrollo de un motor de búsqueda para catálogos co.</li>
+                        <li>Login mediante Passport, Base de datos mediante meni subida a mLab.</li>
+                        <li>Desarrollo de un catálogo de Cómics. League of Comics</li>
+                        <li>Uso de API externa, aplicación de filtros, SPA, responde</li>
+                        <li>Tecnologías: AngularJS, Bootstrap, Stowler, API, CSS, ITA MongoDB, ExpressJS, Node.js, Sass, Heroku, SPA, Teque</li>
+                        <li>Aplicación de metodologías en proyectos en equip</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 class="main-section-title">Educación</h2>
+            
+            <div class="education-entry">
+                <div class="education-title">Web Development Full-Stack Javascript Bootcam</div>
+                <div class="education-institution">Skylab Coders Academy / 2017</div>
+            </div>
+            
+            <div class="education-entry">
+                <div class="education-title">Licenciatura, Psicología</div>
+                <div class="education-institution">Universitat Rovira i Virgili / 2012</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
