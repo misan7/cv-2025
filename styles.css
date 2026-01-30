@@ -44,6 +44,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .contact-icon {
@@ -124,6 +128,8 @@ body {
 .link-url {
   color: #666;
   word-break: break-all;
+  text-decoration: none;
+  color: inherit;
 }
 
 .language-item {
